@@ -73,7 +73,7 @@ class Field(object):
 
 class StringField(Field):
 
-	def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)')
+	def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)'):
 		super().__init__(name, ddl, primary_key, default)
 
 class BooleanField(Field):
@@ -83,7 +83,7 @@ class BooleanField(Field):
 
 class IntegerField(Field):
 
-	def __init__(self, name=None, primary_key=False, default=0)
+	def __init__(self, name=None, primary_key=False, default=0):
 		super().__init__(name, 'bigint', primary_key, default)
 
 class FloatField(Field):
